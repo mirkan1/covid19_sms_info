@@ -61,7 +61,7 @@ def smsMe(response, to):
     deaths = response["deaths"]
     #latitude = response.["latitude"]
     #longitude = response.["longitude"]
-    text = f'in {country} confirmed number of cases are {confirmed}\nRecovered people are more than {recovered}.\nAlthough there are {critical} people are in critical candition and {deaths} deaths'
+    text = f'In {country} confirmed number of cases are {confirmed}.\nRecovered people are more than {recovered}.\n{critical} people are still in critical candition and {deaths} deaths'
     return twilioSms(text, to)
 
 app = Flask(__name__)
