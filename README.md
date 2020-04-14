@@ -1,9 +1,46 @@
-INSTALATION
+### PROJECT DESCRIPTION
+    You can get a country's fight against COVID-19; how many confirmed number of cases, recovered patients, deaths, etc. by sending a message:
+    example input
+    ```
+       to: +12017628866
+       message: "USA" 
+    ```
+    example output
+    ```
+        In Italy confirmed number of cases are 159516.
+         Recovered people are more than 35435.
+         3260 people are still in critical condition and 20465 deaths
+    ```
+    And/Or you can get a news article about COVID-19 by sending message:
+    example input
+    ```
+       to: +12017628866
+       message: "news" 
+    ```
+    example output
+    ```
+        *India coronavirus: World's largest postal service turns lifesaver*
+        India has the largest postal service in the world - and now it is stepping in to help deliver lifesaving medicines during a countrywide lockdown aimed at tackling the coronavirus pandemic. The BBC's Ayeshea Perera in Delhi reports. Red postal vans are a familiar sight in India. They make thousands of journeys every day, criss-crossing the ...
+        from: YAHOO!,
+        published on 13-4-2020
+        https://news.yahoo.com/india-coronavirus-worlds-largest-postal-230159614.html
+    ```
 
-1. open yourself a twilio account, have your ACCOUNT_SID, AUTH_TOKEN, and PHONE_NUMBER ready, page to find it is 
+# MESSAGING TO +12017628866 WILL BE AVAILABLE UNTIL THE HECATRON IS OVER, FEEL FREE TO TEST IT
+![example input/output](https://github.com/mirkan1/covid19_sms_info/blob/master/example.png?raw=true)
+
+
+### USED APIs
+    - twilioAPI (twilio.com)
+        for SMS messaging
+    - rapidAPI (rapidapi.com)
+        for information gathering
+
+### INSTALLATION
+## 1. open yourself a Twilio account, have your ACCOUNT_SID, AUTH_TOKEN, and PHONE_NUMBER ready, page to find it is 
 https://www.twilio.com/console/ 
 
-2. if you dont have python3 and/or node.js installed to your computer download and install it. 
+## 2. if you don't have python3 and/or node.js installed to your computer download and install it. 
 
 Python: 
 ```
@@ -15,7 +52,7 @@ Node.js:
 https://nodejs.org/en/download/
 ```
 
-3. Install twilio to your computer:
+## 3. Install Twilio to your computer:
 
 # WINDOWS
 Before we can install, we need to make sure you have Node.js installed (version 10 or above). To see if you have node installed, try running this command:
@@ -94,25 +131,36 @@ If you already installed the CLI with npm and want to upgrade to the latest vers
 npm install twilio-cli@latest -g
 ```
 
-4. Clone this repisitory:
+## 4. Clone this repisitory:
 
 on terminal/cmd
 ```
 git clone https://github.com/mirkan1/covid_sms_info.git
 ```
 
-5. Install required python packages on requirements.txt file:
+## 5. Install required python packages on requirements.txt file:
 
 on terminal/cmd
 ```
 pip install -r requirements.txt
 ```
+or
+```
+pip3 install -r requirements.txt
+```
 
-6. make adjustment on settings.py:
-in order to do this you need to replace ACCOUNT_SID, AUTH_TOKEN, and PHONE_NUMBER on settings.py
-after you did this we should be ready for lunch
+## 6. make adjustment on settings.py:
+in order to do this you need to replace ACCOUNT_SID, AUTH_TOKEN, and PHONE_NUMBER on settings.py:
+```
+ACCOUNT_SID = 'YOUR_ACCOUNT_SID' 
+AUTH_TOKEN = 'YOUR_ACCOUNT_TOKEN' 
+PHONE_NUMBER = "+YOUR_TWILIO_PHONE_NUMBER"
+PORT = "5000"
+HOSTNAME = "localhost"
+```
+after we are done with this we are ready to lunch
 
-7. run main.py:
+## 7. run main.py:
 
 on terminal/cmd
 ```
