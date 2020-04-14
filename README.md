@@ -1,42 +1,43 @@
-### PROJECT DESCRIPTION
-    You can get a country's fight against COVID-19; how many confirmed number of cases, recovered patients, deaths, etc. by sending a message:
-    example input
-    ```
-       to: +12017628866
-       message: "USA" 
-    ```
-    example output
-    ```
-        In Italy confirmed number of cases are 159516.
-         Recovered people are more than 35435.
-         3260 people are still in critical condition and 20465 deaths
-    ```
-    And/Or you can get a news article about COVID-19 by sending message:
-    example input
-    ```
-       to: +12017628866
-       message: "news" 
-    ```
-    example output
-    ```
-        *India coronavirus: World's largest postal service turns lifesaver*
-        India has the largest postal service in the world - and now it is stepping in to help deliver lifesaving medicines during a countrywide lockdown aimed at tackling the coronavirus pandemic. The BBC's Ayeshea Perera in Delhi reports. Red postal vans are a familiar sight in India. They make thousands of journeys every day, criss-crossing the ...
-        from: YAHOO!,
-        published on 13-4-2020
-        https://news.yahoo.com/india-coronavirus-worlds-largest-postal-230159614.html
-    ```
+### MESSAGING TO +12017628866 WILL BE AVAILABLE UNTIL THE HECATRON IS OVER, FEEL FREE TO TEST IT
+![example input/output](https://github.com/mirkan1/covid19_sms_info/blob/master/example.PNG?raw=true)
 
-# MESSAGING TO +12017628866 WILL BE AVAILABLE UNTIL THE HECATRON IS OVER, FEEL FREE TO TEST IT
-![example input/output](https://github.com/mirkan1/covid19_sms_info/blob/master/example.png?raw=true)
+# PROJECT DESCRIPTION
+You can get a country's fight against COVID-19; how many confirmed number of cases, recovered patients, deaths, etc. by sending a message:
+example input
+```
+    to: +12017628866
+    message: "USA" 
+```
+example output
+```
+    In Italy confirmed number of cases are 159516.
+        Recovered people are more than 35435.
+        3260 people are still in critical condition and 20465 deaths
+```
+And/Or you can get a news article about COVID-19 by sending message:
+example input
+```
+    to: +12017628866
+    message: "news" 
+```
+example output
+```
+    *India coronavirus: World's largest postal service turns lifesaver*
+    India has the largest postal service in the world - and now it is stepping in to help deliver lifesaving medicines during a countrywide lockdown aimed at tackling the coronavirus pandemic. The BBC's Ayeshea Perera in Delhi reports. Red postal vans are a familiar sight in India. They make thousands of journeys every day, criss-crossing the ...
+    from: YAHOO!,
+    published on 13-4-2020
+    https://news.yahoo.com/india-coronavirus-worlds-largest-postal-230159614.html
+```
 
 
-### USED APIs
+
+# USED APIs
     - twilioAPI (twilio.com)
         for SMS messaging
     - rapidAPI (rapidapi.com)
         for information gathering
 
-### INSTALLATION
+# INSTALLATION
 ## 1. open yourself a Twilio account, have your ACCOUNT_SID, AUTH_TOKEN, and PHONE_NUMBER ready, page to find it is 
 https://www.twilio.com/console/ 
 
@@ -54,7 +55,7 @@ https://nodejs.org/en/download/
 
 ## 3. Install Twilio to your computer:
 
-# WINDOWS
+### WINDOWS
 Before we can install, we need to make sure you have Node.js installed (version 10 or above). To see if you have node installed, try running this command:
 
 ```
@@ -80,7 +81,7 @@ If you already installed the CLI with npm and want to upgrade to the latest vers
 npm install twilio-cli@latest -g
 ```
 
-# MAX OS X
+### MAX OS X
 One of the easiest ways to install the CLI on Mac OS X is to use Homebrew. If you don't already have it installed, visit the Homebrew site for installation instructions and then return here.
 
 Once Homebrew is installed, simply run the following command to install the CLI:
@@ -98,7 +99,7 @@ If you have installed Node.js version 10 or higher on your Mac, you can avoid po
 ```
 npm install twilio-cli -g
 ```
-# LINUX
+### LINUX
 Before we can install, we need to make sure you have Node.js installed (version 10 or above). Even if you already installed Node yourself, the CLI works best when you install it using nvm. Here's how to get nvm installed on most Linux systems:
 
 ```
